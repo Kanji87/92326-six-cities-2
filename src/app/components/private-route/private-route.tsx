@@ -1,8 +1,8 @@
 import { AppRouteList, AuthStatus } from '../../../contants.ts';
 import { Navigate } from 'react-router-dom';
-import { PropsWithChildren, ReactElement } from 'react';
+import { ReactElement } from 'react';
 
-interface PrivateRouteProps extends PropsWithChildren {
+interface PrivateRouteProps {
   authStatus: AuthStatus;
   children: ReactElement;
 }
